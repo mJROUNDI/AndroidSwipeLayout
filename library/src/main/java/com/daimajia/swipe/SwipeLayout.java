@@ -28,6 +28,13 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Created by mohamed.jroundi on 08/06/2016.
+ *
+ * THIS CLASS IS THE SAME AS compile "com.daimajia.swipelayout:library:1.2.0@aar"
+ * I just commented the line :  safeBottomView in method updateBottomViews
+ * to make it work on shity devices like WIKO
+ */
 public class SwipeLayout extends FrameLayout {
     @Deprecated
     public static final int EMPTY_LAYOUT = -1;
@@ -1648,6 +1655,6 @@ public class SwipeLayout extends FrameLayout {
             layoutLayDown();
         }
 
-        safeBottomView();
+        //safeBottomView();//this line was comented to make this work on wiko devices
     }
 }
